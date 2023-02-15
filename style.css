@@ -226,7 +226,6 @@ h4{
     display:flex;
     flex-direction: column;
     justify-content:space-between;
-    padding-left:10px;
 }
 
 .offre-pop a {
@@ -235,7 +234,6 @@ h4{
     border-color:#F2F2F2;
     border-radius: 20px;
     background-color: white;
-    margin:20px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
 
@@ -284,6 +282,10 @@ h4{
     justify-items: center;
 }
 
+footer h2{
+    padding-left:0px;
+}
+
 .footer a{
     font-size: 16px;
     padding-top:10px;
@@ -302,6 +304,19 @@ footer{
 
 /*version tablette*/
 @media screen and (min-width:768px) and (max-width:991px){
+    .texte h3{
+        font-size:14px;
+    }
+
+    .texte h4{
+        font-size:13px;
+    }
+
+    .boutons_filtres{
+        display: flex;
+        justify-content: space-between;
+    }
+
     .hebergements{
         display:flex;
         flex-direction: column;
@@ -312,18 +327,21 @@ footer{
         width:100%;
     }
 
+    .hebergements-principaux{
+        display: flex;
+        flex-direction: column;
+    }
+
     .offres-populaires{
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row;
+        padding-bottom: 20px;
     }
 
-    .texte h3{
-        font-size:14px;
-    }
-
-    .texte h4{
-        font-size:13px;
+    .offre-pop{
+        height:144px;
+        width:260px;
     }
 
     .card-pop{
