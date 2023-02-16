@@ -39,13 +39,13 @@ body{
 h1{
     font-size:22px;
     padding:10px;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 h2{
     font-size: 18px;
     padding-left: 10px;
-    font-weight: bold;
+    font-weight:900;
 }
 
 h3{
@@ -235,11 +235,16 @@ h4{
     border-radius: 20px;
     background-color: white;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+    margin-left:30px;
+    height:144px;
+    width:343px;
 }
 
 .offres-populaires{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .cadre-populaire{
@@ -339,9 +344,10 @@ footer{
         padding-bottom: 20px;
     }
 
-    .offre-pop{
+    .offre-pop a{
         height:144px;
-        width:260px;
+        width:252px;
+        margin-left: 0px;
     }
 
     .card-pop{
@@ -459,6 +465,20 @@ footer{
         background-color: white;
     }
 
+    .offre{
+        height:240px;
+        width:335px;
+    }
+
+    .offre h3{
+        padding-bottom:0px;
+    }
+
+    .card{        
+        height:124px;
+        width:335px;
+    }
+
     .plus{
         display:none;
     }
@@ -469,4 +489,32 @@ footer{
     }
 
 
+    .activites{
+        margin-top: 50px;
+    }
+
+    .liste-activites{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .offre-act{
+        height:190px;
+        width:334px;
+        margin-bottom: 30px;
+    }
+
+    .offre-act a img{
+        height:134px;
+        width:334px;
+    }
+
+    footer{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        margin-bottom: 40px;
+    }
 }
