@@ -147,7 +147,7 @@ h4{
     padding-top: 20px;
 }
 
-/*mise ne page ligne d'information*/
+/*mise en page ligne d'information*/
 .logo_info {
     border:solid 2px #DEEBFF;
     border-radius: 50px;
@@ -183,7 +183,7 @@ h4{
 .liste-hebergements{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: space-between;
 }
 
