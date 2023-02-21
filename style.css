@@ -1,14 +1,21 @@
 /*mise en page en-tête*/
 .logo{
-    padding-top:10px;
+    padding-top:40px;
 }
 .logo:hover{
     border-top:solid 1px #0065FC; 
 }
 
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
 .menu a{
-    margin:20px;
+    padding-top: 60px;
     font-size: 16px;
+    margin-right: 50px;
 }
 .menu a:hover,
 .menu a:active{
@@ -311,6 +318,7 @@ footer{
 
 /*version tablette*/
 @media screen and (min-width:768px) and (max-width:991px){
+/*version tablette : mise en page générale*/
     .texte h3{
         font-size:14px;
     }
@@ -319,26 +327,26 @@ footer{
         font-size:13px;
     }
 
+/*version tablette : mise en page des filtres*/
     .boutons_filtres{
         display: flex;
         justify-content: space-between;
     }
 
+/*version tablette : mise en page entre les blocs "Hébergements à Marseille" et "Les plus populaires"*/
     .hebergements{
         display:flex;
         flex-direction: column;
     }
 
-    .hebergements-principaux,
-    .cadre-populaire{
-        width:100%;
-    }
-
+/*version tablette : mise en page du bloc " Hébergements à Marseille"*/
     .hebergements-principaux{
+        width:100%;
         display: flex;
         flex-direction: column;
     }
 
+/*version tablette : mise en page du bloc "Les plus populaires"*/
     .offres-populaires{
         display:flex;
         justify-content: space-around;
@@ -346,17 +354,15 @@ footer{
         padding-bottom: 20px;
     }
 
-    .offre-pop a{
-        height:144px;
-        width:252px;
-        margin-left: 0px;
+    .offre-pop{
+        width:30%;
     }
 
-    .card-pop{
-        height:144px;
-        width:106px;
+    .cadre-populaire{
+        width:100%;
     }
 
+/*version tablette : mise en page du bloc "Activités à Marseille"*/
     .offre-act img{
         height: 211px;
     }
@@ -365,15 +371,25 @@ footer{
 
 /*version mobile*/
 @media screen and (max-width:767px){
+/*version mobile : mise en page du header*/
     .logo{
         display:flex;
         justify-content: center;
+        padding-bottom:40px;
     }
 
     .menu{
         display:flex;
         flex-direction:row;
         justify-content: space-around;
+    }
+
+    .menu a{
+        padding-bottom:60px;
+        width:50%;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
     }
 
     .logo:hover,
@@ -389,6 +405,7 @@ footer{
         flex-direction: column;
     }
 
+/*version mobile : mise en page bouton de recherche*/
     .accueil-recherche{
         display:none;
     }
@@ -426,7 +443,8 @@ footer{
     .accueil-recherche-mobile form{
         display: flex;
     }
-    
+
+/*version mobile : mise en page des filtres*/
     .filtres{
         display:flex;
         flex-direction: column;
@@ -446,12 +464,20 @@ footer{
         flex-wrap:wrap;
     }
 
+/*version mobile : mise en page du bloc "Les plus populaires"*/
     .cadre-populaire{
         order:1;
         width:100%;
         border-radius: 0px;
     }
 
+    .offre-pop{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+
+/*version mobile : mise en page du bloc "Hébergements à Marseille"*/
     .hebergements-principaux{
         order:2;
         width:100%;
@@ -460,30 +486,37 @@ footer{
         background-color: white;
     }
 
+    .liste-hebergements{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
     .offre{
-        height:240px;
-        width:335px;
+        height:260px;
+        width:95%;
+    }
+    
+    .card{        
+        height:140px;
+        width:100%;
     }
 
     .offre h3{
         padding-bottom:0px;
     }
 
-    .card{        
-        height:124px;
-        width:335px;
-    }
-
     .plus{
         display:none;
     }
 
+/*version mobile : mise en page entre les blocs "Hébergements à Marseille" et "Les plus populaires"*/
     .hebergements{
         display:flex;
         flex-direction:column;
     }
 
-
+/*version mobile : mise en page du bloc "Activités à Marseille"*/
     .activites{
         margin-top: 50px;
     }
@@ -491,16 +524,27 @@ footer{
     .liste-activites{
         display:flex;
         flex-direction: column;
-        align-items: center;
-    }
-    .offre-act{
-        width:90%;
-        margin-bottom: 30px;
+        width:95%;
+        padding-left: 20px;
     }
 
+    .offre-act{
+        width:100%;
+        margin-bottom: 30px;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .offre-act img{
+        height:200px;
+    }
+
+/*version mobile : mise en page du footer*/
     footer{
         display:flex;
         flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .footer{
