@@ -3,7 +3,7 @@
     padding-top:40px;
 }
 .logo:hover{
-    border-top:solid 1px #0065FC; 
+    border-top:solid 2px #0065FC; 
 }
 
 .menu{
@@ -20,7 +20,7 @@
 .menu a:hover,
 .menu a:active{
     color:#0065FC;
-    border-top:solid 1px #0065FC; 
+    border-top:solid 2px #0065FC; 
 }
 
 header nav{
@@ -390,13 +390,14 @@ footer{
         margin-right: 0px;
         display: flex;
         justify-content: center;
+        border-bottom:solid 3px #F2F2F2;
     }
 
     .logo:hover,
     .logo:active,
     .menu a:hover,
     .menu a:active{
-        border-bottom:solid 1px #0065FC; 
+        border-bottom:solid 3px #0065FC; 
         border-top: none;
     }
 
