@@ -237,6 +237,10 @@ h4{
     width:60%;
 }
 
+.offre-pop{
+    width:100%;
+}
+
 .offre-pop a {
     display:flex;
     border-color:#F2F2F2;
@@ -246,7 +250,6 @@ h4{
     margin-bottom: 40px;
     margin-left:10px;
     margin-right: 10px;
-    width:95%;
 }
 
 .offres-populaires{
@@ -473,9 +476,12 @@ footer{
     }
 
     .offre-pop{
-        width:100%;
         display: flex;
         justify-content: center;
+    }
+
+    .offre-pop a{
+        width:100%;
     }
 
 /*version mobile : mise en page du bloc "Hébergements à Marseille"*/
