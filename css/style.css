@@ -157,18 +157,29 @@ h4{
 }
 
 /*mise en page de l'article "hebergements principaux"*/
-.card{
-    height:124px;
-    width:246px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+.hebergements-principaux h1{
+    margin-left:20px;
 }
 
+.card{
+    height:124px;
+    width:97%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    padding:4px;
+}
+
+.offre a h3,
+.offre a h4,
 .note{
-    padding-left: 10px;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:20px;
+    margin-right:5px;
 }
 
 .offre{
+    width:30%;
     background-color: white;
     border-radius: 20px;
     margin:10px;
@@ -176,11 +187,15 @@ h4{
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
 
+.liste1,
+.liste2{
+    display:flex;
+    justify-content: space-between;
+}
+
 .liste-hebergements{
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
+    flex-direction:column;
 }
 
 .hebergements-principaux{
@@ -211,12 +226,22 @@ h4{
 }
 
 .card-pop{
-    height:170px; 
+    height:144px; 
     width:40%;
     object-fit:cover;
     border-radius: 20px 0px 0px 20px;
     display: flex;
     align-self: center;
+    padding:4px;
+}
+
+.texte h3,
+.texte h4,
+.note{
+    margin-top:10px;
+    margin-bottom:5px;
+    margin-left:5px;
+    margin-right:5px;
 }
 
 .contenu{
@@ -482,6 +507,12 @@ footer{
         display: flex;
         flex-direction: column;
         background-color: white;
+    }
+
+    .liste1,
+    .liste2{
+        display:flex;
+        flex-direction: column;
     }
 
     .liste-hebergements{
