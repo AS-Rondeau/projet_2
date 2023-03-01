@@ -76,14 +76,14 @@ h4{
 .recherche img{
     border-radius:15px 0px 0px 15px;
     border: 1px solid #F2F2F2;
-    padding:10px;
+    padding:15px;
     background-color: #F2F2F2;
 
 }
 
 .recherche input{
     border: 1px solid #F2F2F2;
-    height:40px;
+    height:50px;
     width:300px;
     font-size: 18px;
 }
@@ -92,9 +92,9 @@ h4{
     border-radius:0px 15px 15px 0px;
     background-color: #0065FC;
     color:white;
-    padding:10px;
+    padding:15px;
     border:none;
-    height:40px;
+    height:50px;
     font-size: 18px;
     cursor:pointer;
 }
@@ -403,9 +403,7 @@ footer{
     }
 
     .logo:hover,
-    .logo:active,
-    .menu a:hover,
-    .menu a:active{
+    .menu a:hover{
         border-bottom:solid 3px #0065FC; 
         border-top: none;
     }
@@ -428,14 +426,14 @@ footer{
     .localisation{
         border-radius:15px 0px 0px 15px;
         border: 1px solid #F2F2F2;
-        padding:10px;
+        padding:15px;
         background-color: #F2F2F2;
     
     }
     
     .recherche_mobile input{
         border: 1px solid #F2F2F2;
-        height:40px;
+        height:50px;
         width:280px;
         font-size: 18px;
     }
@@ -444,9 +442,9 @@ footer{
         border-radius:0px 15px 15px 0px;
         background-color: #0065FC;
         color:white;
-        padding:10px;
+        padding:15px;
         border:none;
-        height:40px;
+        height:50px;
         font-size: 18px;
     }
     
