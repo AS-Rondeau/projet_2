@@ -51,11 +51,12 @@ body{
     padding-left:55px;
     padding-right: 55px;
     margin:0px;
+    font-weight:100;
 }
 
 h1{
     font-size:22px;
-    font-weight: bolder;
+    font-weight:900;
 }
 
 h2{
@@ -237,7 +238,7 @@ h4{
 
 .texte h3,
 .texte h4,
-.note{
+.note-pop{
     margin-top:10px;
     margin-bottom:5px;
     margin-left:5px;
@@ -392,21 +393,30 @@ footer{
 
 /*version mobile*/
 @media screen and (max-width:767px){
+
+/*version mobile : mise en page générale*/
+body{
+    margin-top: 20px;
+    padding-left :0px;
+    padding-right: 0px;
+}
+
+h1,
+h3{
+    margin-left: 20px;
+}
+
 /*version mobile : mise en page du header*/
     .logo{
         display:flex;
         justify-content: center;
-        padding-bottom:40px;
     }
-
-    .menu{
-        display:flex;
-        flex-direction:row;
-        justify-content: space-around;
+    .logo:hover{
+        border-top:none;
     }
 
     .menu a{
-        padding-bottom:60px;
+        padding-bottom:20px;
         width:50%;
         margin-right: 0px;
         display: flex;
@@ -414,7 +424,6 @@ footer{
         border-bottom:solid 3px #F2F2F2;
     }
 
-    .logo:hover,
     .menu a:hover{
         border-bottom:solid 3px #0065FC; 
         border-top: none;
@@ -433,6 +442,8 @@ footer{
     .accueil-recherche-mobile{
         display:block;
         cursor:pointer;
+        margin-left: 20px;
+        margin-right:20px;
     }
     
     .localisation{
@@ -440,7 +451,6 @@ footer{
         border: 1px solid #F2F2F2;
         padding:15px;
         background-color: #F2F2F2;
-    
     }
     
     .recherche_mobile input{
@@ -468,10 +478,13 @@ footer{
     .filtres{
         display:flex;
         flex-direction: column;
+        margin-left:20px;
     }
 
     .boutons_filtres button{
-        margin: 10px;
+        margin-left: 0px;
+        margin-bottom:20px;
+        margin-right:10px;
         width:160px;
         height:50px;
         font-size: 11px;
@@ -484,6 +497,12 @@ footer{
         flex-wrap:wrap;
     }
 
+/*version mobile : mise en page information*/
+.logo_info{
+    margin-left: 20px;
+    margin-right:0px;
+}
+
 /*version mobile : mise en page du bloc "Les plus populaires"*/
     .cadre-populaire{
         order:1;
@@ -491,9 +510,14 @@ footer{
         border-radius: 0px;
     }
 
+    .titre{
+        padding-left:0px;
+    }
+
     .offre-pop{
         display: flex;
         justify-content: center;
+        width:95%;
     }
 
     .offre-pop a{
@@ -522,13 +546,12 @@ footer{
     }
 
     .offre{
-        height:260px;
-        width:95%;
+        width:90%;
+        margin-left:20px;
     }
     
     .card{        
         height:140px;
-        width:100%;
     }
 
     .offre h3{
@@ -553,7 +576,7 @@ footer{
     .liste-activites{
         display:flex;
         flex-direction: column;
-        width:95%;
+        width:90%;
         padding-left: 20px;
     }
 
@@ -574,6 +597,7 @@ footer{
         flex-direction: column;
         margin-left: 0px;
         margin-right: 0px;
+        padding-left:20px;
     }
 
     .footer{
