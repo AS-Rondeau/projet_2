@@ -139,6 +139,11 @@ h4{
     flex-direction: row;
 }
 
+.filtres1,
+.filtres2{
+    display:flex;
+}
+
 .filtres{
     display:flex;
     flex-direction: row;
@@ -441,7 +446,6 @@ h3{
 
     .accueil-recherche-mobile{
         display:block;
-        cursor:pointer;
         margin-left: 20px;
         margin-right:20px;
     }
@@ -468,6 +472,7 @@ h3{
         border:none;
         height:50px;
         font-size: 18px;
+        cursor:pointer;
     }
     
     .accueil-recherche-mobile form{
@@ -484,17 +489,22 @@ h3{
     .boutons_filtres button{
         margin-left: 0px;
         margin-bottom:20px;
-        margin-right:10px;
-        width:160px;
+        margin-right:20px;
+        width:180px;
         height:50px;
         font-size: 11px;
         display: flex;
         align-items: center;
     }
 
+    .filtres1,
+    .filtres2{
+        display:flex;
+    }
+
     .boutons_filtres{
         display: flex;
-        flex-wrap:wrap;
+        flex-direction:column;
     }
 
 /*version mobile : mise en page information*/
