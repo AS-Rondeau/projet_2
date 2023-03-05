@@ -87,8 +87,9 @@ h4{
     border: 1px solid #F2F2F2;
     height:50px;
     width:300px;
+    font-family:"raleway";
     font-size: 18px;
-    font-weight:600;
+    font-weight:700;
     color: black;
     padding:20px;
 }
@@ -100,8 +101,9 @@ h4{
     padding:15px;
     border:none;
     height:50px;
+    font-family:"raleway";
     font-size: 18px;
-    font-weight:600;
+    font-weight:700;
     cursor:pointer;
 }
 
@@ -117,8 +119,9 @@ h4{
 
 /*mise en page recherche par filtres*/
 .boutons_filtres button{
+    font-family:"raleway";
     font-size: 17px;
-    font-weight:600;
+    font-weight:700;
     border:solid 3px #F2F2F2;
     background-color: white;
     border-radius: 30px;
